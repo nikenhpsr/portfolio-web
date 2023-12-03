@@ -1,19 +1,21 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <div className="header">
       <nav>
         <div className="navbar">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/experiences">Experiences</a>
+            <Link to="/experiences">Experiences</Link>
           </li>
           <li>
-            <a href="/blog">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
         </div>
       </nav>

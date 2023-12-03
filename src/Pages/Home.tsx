@@ -45,7 +45,11 @@ const Home: React.FC = () => {
         I love building scalable and performant applications that provide great
         user experiences.
       </motion.p>
-      <Button />
+      <div className="buttons-container">
+        <Button buttonText="Projects" />
+        <Button buttonText="More About Me" />
+      </div>
+      <p>What am I currently working/learning on?</p>
     </motion.div>
   );
 };
