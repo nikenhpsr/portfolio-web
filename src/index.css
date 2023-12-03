@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Unbounded");
+
+:root {
+  --primary-color: #262626;
+  --secondary-color: #3c3c3c;
+  --accent-color: #ff7f00;
+  --text-color: #ffffff;
+  --background-color: #1e1e1e;
+  --font-family: "Unbounded", sans-serif;
+  --complimentary-font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: var(--font-family);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+  z-index: 999;
+}
+
+.header a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: var(--accent-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--accent-color);
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.home-content {
+  width: 100%;
+  margin: 7% auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.home-content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  width: 60%;
+}
+
+.home-content h2 {
+  margin-bottom: 20px;
+}
+
+.name {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.icon {
+  color: white;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: var(--accent-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff9900;
+}
